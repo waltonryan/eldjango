@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Template - User{% endblock %}
+
+{% block content %}
+<h1>Submit Data to a Database</h1>
+{% if form.errors %}
+    <p style="color: red;">
+        Please correct the error{{ form.errors|pluralize }} below.
+    </p>
+{% endif %}
+<form action="" method="post">
+    <table>
+        {{ form.as_table }}
+    </table>
+    {% csrf_token %}
+    <input class="btn" type="submit" value="Submit">
+</form>
+{% endblock %}

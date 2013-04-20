@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+{% load static from staticfiles %}
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>{% block title %}Base{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/static/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="/static/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	{% block head %}
+	{% endblock %}
+	
+</head>
+<body class="{% block body_class %}{% endblock %}">	
+	{% include 'includes/navbar.html' %}
+	<div class="body-wrapper">
+		{% block content %}
+			<h1>Whoops</h1>
+			<p>Sorry, to err is human</p>
+		{% endblock %}
+	</div>
+	{% include 'includes/footer.html' %}
+	<!-- jQuery & Bootstrap-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script 	src="/static/jquery-1.9.1.js">\x3C/script>')</script>
+	<script type="text/javascript" src="/static/bootstrap.js"></script>
+</body>
+	{% include 'utils/googleanalytics.html' %}
+</html>

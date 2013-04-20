@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Template - Contact{% endblock %}
+
+{% block content %}
+<h1>Contact Form</h1>
+
+{% if form.errors %}
+    <p style="color: red;">
+        Please correct the error{{ form.errors|pluralize }} below.
+    </p>
+{% endif %}
+<div>
+	<form action="" method="post">{% csrf_token %}
+	    {{ form.non_field_errors }}
+	    <div class="">
+	        {{ form.subject.errors }}
+	        <label for="id_subject">Email subject:</label>
+	        {{ form.subject }}
+	    </div>
+	    <div class="">
+	        {{ form.message.errors }}
+	        <label for="id_message">Your message:</label>
+	        {{ form.message }}
+	    </div>
+	    <div class="">
+	        {{ form.email.errors }}
+	        <label for="id_email">Your email address:</label>
+	        {{ form.email }}
+	    </div>
+	    <p><input class="btn" type="submit" value="Send message" /></p>
+	</form>
+</div>
+{% endblock %}

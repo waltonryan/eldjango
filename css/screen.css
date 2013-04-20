@@ -1,0 +1,38 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+.body-home-page {
+  background: url(../static/engagement-picnic.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.body-wrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.navbar-inner {
+  padding-left: 5% !important;
+  padding-right: 5% !important; }
+
+.user-dropdown {
+  padding: 10px 15px 5px 15px !important; }
+
+.user-thumbnail {
+  width: 25px; }
+
+.homepage-hero {
+  text-align: center;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18%;
+  margin-bottom: 50px;
+  padding: 25px;
+  background: rgba(238, 233, 233, 0.71);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }

@@ -1,0 +1,7 @@
+venv
+*.pyc
+*.env
+.DS_Store
+.sass-cache/
+settings_local.py
+settings_production.py
