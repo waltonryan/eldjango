@@ -5,14 +5,14 @@ See the app in <a href="http://www.eldjango.com">Action</a>. It'll take a few se
 
 ## Why is El Django so Great ##
 
--Get your app running in about 30 minutes
--Full login/signup and edit profile settings support via django-userena, which includes email confirmations
--Twitter Bootstrap (as Less and compiled files)
--Fully functional SMTP setup via Mandrill
--Sass functionality
--Compass ready (config.rb file included)
--Sample db submission form (to log data into your db)
--Contact us form submitted via Mandrill
+* Get your app running in about 30 minutes
+* Full login/signup and edit profile settings support via django-userena, which includes email confirmations
+* Twitter Bootstrap (as Less and compiled files)
+* Fully functional SMTP setup via Mandrill
+* Sass functionality
+* Compass ready (config.rb file included)
+* Sample db submission form (to log data into your db)
+* Contact us form submitted via Mandrill
 
 ## Before You Get Started ##
 
