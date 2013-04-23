@@ -11,7 +11,21 @@ Depending on your needs, you might want to make sure you've properly installed a
 * <a href="https://toolbelt.heroku.com/">Heroku Toolbelt</a>
 * <a href="https://pypi.python.org/pypi/virtualenv">Virtualenv</a>
 
-See requirements.txt for a complete list of dependencies. A lot of the setup instructions come from <a href="https://devcenter.heroku.com/articles/django">Django on Heroku</a>. It's a really great resource.
+A lot of the setup instructions come from <a href="https://devcenter.heroku.com/articles/django">Django on Heroku</a>. It's a really great resource.
+
+Here are the requirements, the installation of which are described more fully below:
+
+	Django==1.5.1
+	distribute==0.6.34
+	dj-database-url==0.2.1
+	gunicorn==0.17.2
+	psycopg2==2.5
+	wsgiref==0.1.2
+	mandrill>=1.0.6
+	djrill==0.4.0
+	django-userena==1.2.0
+	django-guardian==1.1.0.beta
+	PIL>=1.1.7
 
 ## Installation ##
 
@@ -111,7 +125,7 @@ Make sure you install python-PIL. For <a hrf="http://pythonmac.org/packages/py25
 
 	$ pip install --no-index -f http://dist.plone.org/thirdparty/ -U PIL
 
-Make sure that you <code>check permissions</code>, as described by the <a href="http://docs.django-userena.org/en/latest/commands.html#commands">django-userena documentation</a>. This is because we are not starting django-userena from scratch. This will usually do the trick:
+Make sure that you <code>check permissions</code> as instructed by the <a href="http://docs.django-userena.org/en/latest/commands.html#commands">django-userena documentation</a>. This is because we are not starting eldjango from scratch. This will usually do the trick:
 
 	$ heroku run python manage.py check_permissions
 	
