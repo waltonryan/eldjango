@@ -1,7 +1,7 @@
 # El Django | A Python/Django Starter App. #
 Get your project up and running. Quickly. Supports <a href="http://compass-style.org">Compass</a>, <a href="http://sass-lang.com">Sass</a> and <a href="http://lesscss.org">Less</a>. Uses <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, <a href="http://mandrill.com/">Mandrill</a>, <a href="http://www.django-userena.org/">django-userena</a> and <a href="https://github.com/brack3t/Djrill">djrill</a>. Designed for use with <a href="https://devcenter.heroku.com/articles/django">Heroku</a>.
 
-See the app in <a href="http://www.eldjango.com">Action</a>.
+See the app in <a href="http://www.eldjango.com">Action</a>. It'll take a few seconds to load due to its development settings.
 
 ## Before You Get Started ##
 
@@ -99,7 +99,7 @@ Like so:
 
 	MANDRILL_API_KEY = 'af5xxxxx-xxxx-xxxx-xxxx-dexxxxxxxxxx'
 	
-Add the email address you'd like to use for Mandrill. Heroku give you an email address to use if you like:
+Add the email address you'd like to use for Mandrill. Heroku provides you with an email address that you may use if you like. Add the email address to the /eldjango/mysite/settings.py file:
 
 	DEFAULT_FROM_EMAIL = 'your email address here' (example@address.com)
 	
@@ -107,7 +107,9 @@ If you'd like, get a <a href="http://www.google.com/analytics/">Google Analytics
 
 	GOOGLE_TRACKING_ID = 'UA-XXXXXXXX-X'
 	
-Make sure you install python-PIL. For <a hrf="http://pythonmac.org/packages/py25-fat/index.html">Mac</a>
+Make sure you install python-PIL. For <a hrf="http://pythonmac.org/packages/py25-fat/index.html">Mac</a>. This can cause the error "No module named Image". <a href="http://stackoverflow.com/questions/2485295/the-problem-with-installing-pil-using-virtualenv-or-buildout">This</a> could work for you:
+
+	$ pip install --no-index -f http://dist.plone.org/thirdparty/ -U PIL
 
 Make sure that you <code>check permissions</code>, as described by the <a href="http://docs.django-userena.org/en/latest/commands.html#commands">django-userena documentation</a>. This is because we are not starting django-userena from scratch. This will usually do the trick:
 
