@@ -1,5 +1,5 @@
 # El Django | A Python/Django Starter App. #
-Get your project up and running. Quickly. Supports <a href="compass-style.org">Compass</a>, <a href="sass-lang.com">Sass</a> and <a href="lesscss.org">Less</a>. Uses <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, <a href="http://mandrill.com/">Mandrill</a>, <a href="http://www.django-userena.org/">django-userena</a> and <a href="https://github.com/brack3t/Djrill">djrill</a>. Designed for use with <a href="https://devcenter.heroku.com/articles/django">Heroku</a>.
+Get your project up and running. Quickly. Supports <a href="http://compass-style.org">Compass</a>, <a href="http://sass-lang.com">Sass</a> and <a href="http://lesscss.org">Less</a>. Uses <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, <a href="http://mandrill.com/">Mandrill</a>, <a href="http://www.django-userena.org/">django-userena</a> and <a href="https://github.com/brack3t/Djrill">djrill</a>. Designed for use with <a href="https://devcenter.heroku.com/articles/django">Heroku</a>.
 
 See the app in <a href="http://www.eldjango.com">Action</a>.
 
